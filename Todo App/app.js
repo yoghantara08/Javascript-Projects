@@ -55,6 +55,7 @@ function showTodoList() {
   });
   containerList.innerHTML = newLi;
   inputBox.value = "";
+  inputBtn.classList.remove("active");
 }
 
 // remove Todo List
