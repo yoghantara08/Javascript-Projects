@@ -53,6 +53,7 @@ input {
 .input-box button.active {
   opacity: 1;
   pointer-events: auto;
+  cursor: pointer;
 }
 
 .input-box button i {
@@ -114,8 +115,16 @@ input {
   outline: none;
   background-color: #8e49e8;
   color: #fff;
-  cursor: pointer;
   border-radius: 3px;
   padding: 12px 20px;
   font-size: 17px;
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
 }
