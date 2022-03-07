@@ -67,16 +67,16 @@ input {
 }
 .todo-box li {
   width: 100%;
-  font-size: 24px;
+  font-size: 22px;
   margin-right: 5px;
   margin-bottom: 10px;
   background-color: rgb(245, 245, 245);
   border: 1px solid rgb(235, 235, 235);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 20px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
   border-radius: 3px;
 }
 .todo-box li span {
@@ -98,6 +98,7 @@ input {
 .todo-box li:hover span {
   opacity: 1;
   transform: translateX(0);
+  cursor: pointer;
 }
 
 .footer {
