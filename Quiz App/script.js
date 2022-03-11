@@ -1,0 +1,42 @@
+const quizData = [
+  {
+    question: "What is the best programming language?",
+    a: "Python",
+    b: "Java",
+    c: "PHP",
+    d: "Javascript",
+    correct: "d",
+  },
+  {
+    question: "Siapakah President Indonesia sekarang?",
+    a: "Jokowi",
+    b: "SBY",
+    c: "Megawati",
+    d: "Soekarno",
+    correct: "a",
+  },
+  {
+    question: "Tahun berapa Titanic tenggelam di Samudra Atlantik pada 15 April, dalam pelayaran perdananya dari Southampton?",
+    a: "2000",
+    b: "1912",
+    c: "2012",
+    d: "1920",
+    correct: "b",
+  },
+  {
+    question: "Apa nama perusahaan teknologi terbesar di Korea Selatan?",
+    a: "Microsoft",
+    b: "Apple",
+    c: "Samsung",
+    d: "Google",
+    correct: "c",
+  },
+  {
+    question: "Apa burung terkecil di dunia?",
+    a: "Elang",
+    b: "Love Bird",
+    c: "Punglor",
+    d: "Lebah Hummingbird",
+    correct: "d",
+  },
+];
