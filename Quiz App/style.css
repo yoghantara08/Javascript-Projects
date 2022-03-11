@@ -37,6 +37,11 @@ ul li {
   margin: 1rem 0;
 }
 
+ul li label,
+ul li input {
+  cursor: pointer;
+}
+
 button {
   background-color: #8667dd;
   color: white;
