@@ -12,9 +12,13 @@ function countdown() {
   const seconds = Math.floor(times) % 60;
 
   document.getElementById("days").textContent = days;
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
+  document.getElementById("hours").textContent = formatTime(hours);
+  document.getElementById("minutes").textContent = formatTime(minutes);
+  document.getElementById("seconds").textContent = formatTime(seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
 }
 
 countdown();
