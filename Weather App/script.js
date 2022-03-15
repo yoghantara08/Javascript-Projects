@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
   const degree = document.querySelector(".degree");
   const description = document.querySelector(".description");
   const times = document.querySelector(".localtime");
+  const weatherIcon = document.querySelector(".icon");
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -26,7 +27,7 @@ window.addEventListener("load", () => {
 
           // Current
           const { temp_c, temp_f } = current;
-          const { text } = current.condition;
+          const { text, icon } = current.condition;
           // Location
           const { country, localtime, region } = location;
 
@@ -34,6 +35,7 @@ window.addEventListener("load", () => {
           degree.innerHTML = `${temp_c}`;
           description.innerHTML = `${text}`;
           times.innerHTML = localtime;
+          weatherIcon.src = icon;
         });
     });
   }
