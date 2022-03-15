@@ -7,7 +7,6 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
@@ -15,34 +14,39 @@ body {
   color: white;
 }
 
-.location,
-.temperature {
-  height: 30vh;
+.location {
+  margin-top: 200px;
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.location .timezone {
-}
-
 .temperature {
+  margin-top: 100px;
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
-
 .temperature-header {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 .temperature-header .degree {
-  font-size: 40px;
+  font-size: 3rem;
 }
 .temperature-header span {
-  margin: 10px;
-  font-size: 30px;
+  margin-left: 10px;
+  font-size: 2.5rem;
 }
-
+.temperature .localtime {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 .temperature .description {
+  font-size: 2rem;
+  font-weight: 500;
 }
