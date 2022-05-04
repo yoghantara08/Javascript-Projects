@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/pages/Home";
 
 import "./App.css";
 
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" exact></Route>
+          <Route path="/" exact element={<Home />} />
         </Routes>
       </BrowserRouter>
     </Fragment>
