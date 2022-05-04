@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 
@@ -19,13 +19,17 @@ function Navbar() {
     }
   };
 
+  useEffect(() => {
+    showButton();
+  }, []);
+
   window.addEventListener("resize", showButton);
 
   return (
     <Fragment>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             TRVL <i className="fab fa-typo3"></i>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
