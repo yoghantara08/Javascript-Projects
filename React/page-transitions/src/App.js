@@ -1,19 +1,24 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-
-import "./App.css";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import { AnimatePresence } from "framer-motion";
+import GlobalStyle from "./globalStyles";
 
 function App() {
+  let location = useLocation();
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <GlobalStyle />
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
